@@ -1,0 +1,33 @@
+
+.toggleback {
+    flex: none;
+    display: inline-flex;
+    position: relative;
+    align-items: center;
+    border-radius: 50px;
+    width: 50px;
+    height: 28px;
+    background-color: var(--color-toggleback);
+    transition: all 0.3s;
+    margin-left: auto;
+    box-shadow: 5px 5px 20px 0px var(--color-box-shadow);
+
+  }
+  
+  .togglecon {
+    display: inline-block;
+    position: absolute;
+    left: var(--togglecon-pos);
+    border-radius: 50px;
+    width: 22px;
+    height: 22px;
+    background-color: var(--color-togglecon);
+    transition: all 0.2s ease;
+    box-shadow: 0 0 20px 3px var(--color-box-shadow-hover);
+    z-index: 3;
+  }
+  
+  .toggleback:active .togglecon {
+    background-color: hsl(0, 0%, 90%);
+  }
+  
